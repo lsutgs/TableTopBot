@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/lsutgs/TableTopBot/issues"
   },
-  "homepage": "https://github.com/lsutgs/TableTopBot#readme"
+  "homepage": "https://github.com/lsutgs/TableTopBot",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "discord.js": "^14.14.1"
+  }
 }
