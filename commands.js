@@ -185,4 +185,16 @@ module.exports = {
       });
     },
   },
+
+  "sync-calendar": {
+    command: new SlashCommandBuilder()
+      .setName("sync-calendar")
+      .setDescription("Synchronize events calendar with notion"),
+
+    admin: true,
+
+    async execute(interaction) {
+      await interaction.reply({ content: "Calendar Synced", ephemeral: true });
+    },
+  },
 };
