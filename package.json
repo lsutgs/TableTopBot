@@ -1,0 +1,19 @@
+{
+  "name": "tabletopbot",
+  "version": "1.0.0",
+  "description": "Discord bot for TGS server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsutgs/TableTopBot.git"
+  },
+  "author": "Olivia Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsutgs/TableTopBot/issues"
+  },
+  "homepage": "https://github.com/lsutgs/TableTopBot#readme"
+}
