@@ -11,6 +11,7 @@ const {
 } = require("discord.js");
 const { Client } = require("@notionhq/client");
 
+require("dotenv").config();
 const databaseId = process.env.DATABASE_ID;
 const destGuildId = process.env.GUILD_ID;
 const destChannelId = process.env.CHANNEL_ID;

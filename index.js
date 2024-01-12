@@ -5,6 +5,8 @@ const {
   GatewayIntentBits,
   PermissionsBitField,
 } = require("discord.js");
+require("dotenv").config();
+
 const token = process.env.TOKEN;
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -56,18 +58,6 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
-client.login(token);
-
-// keep alive
-var http = require("http");
-
-http
-  .createServer((req, res) => {
-    res.write("Bot Online");
-    res.end();
-  })
-  .listen(8080);
-
 client.on(Events.ClientReady, () => {
   let activities = [
     "Board Games",
@@ -85,3 +75,6 @@ client.on(Events.ClientReady, () => {
     5000
   );
 });
+
+client.login(token);
+

@@ -6,6 +6,7 @@ const {
   SlashCommandBuilder,
 } = require("discord.js");
 
+require("dotenv").config();
 const welfareURL = process.env.WELFARE_URL;
 
 module.exports = {
